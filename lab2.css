@@ -8,8 +8,9 @@ body {
 
 .container {
     display: flex;
-    width: 100%;
     height: 100vh;
+    width: 100vw;
+    background: #f8faff;
 }
 
 .sidebar {
@@ -20,6 +21,7 @@ body {
     height: 100vh;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    border-right: 1px solid #e3e8f5;
 }
 
 .sidebar-content {
@@ -104,7 +106,73 @@ body {
     background: #e3e8f5;
 }
 
+.content {
+    flex-grow: 1;
+    background: #ffffff;
+    padding: 40px;
+    padding-left: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
 
+.recent-folders {
+    grid-column: 1 / 3;
+}
 
+.recent-folders h3 {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 15px;
+}
 
+.folder-container {
+    display: flex;
+    gap: 20px;
+}
 
+.folder {
+    width: 140px;
+    height: 110px;
+    background: #f1f4fb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    position: relative;
+    transition: background 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    border: 1px solid #e3e8f5;
+}
+
+.folder:hover {
+    background: #e4e8f4;
+    transform: translateY(-3px);
+}
+
+.folder-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.folder-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.notification-dot {
+    width: 6px;
+    height: 6px;
+    background: #ff4d73;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    box-shadow: 0 0 6px rgba(255, 77, 115, 0.6);
+}
