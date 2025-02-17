@@ -3,41 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 2 tester</title>
+    <title>Lab 2 Tester</title>
     <link rel="stylesheet" href="lab2.css">
 </head>
 <body>
 
-    <div class="container">
+    <div class="dashboard">
         <aside class="sidebar">
-            <div class="sidebar-content">
-                <h2 class="logo">S</h2>
-                <ul class="menu">
-                    <li>
+            <div class="sidebar__content">
+                <h2 class="sidebar__logo">S</h2>
+                <ul class="sidebar__menu">
+                    <li class="sidebar__menu-item">
                         <svg width="16" height="16" viewBox="0 0 24 24">
                             <path d="M3 3h8v8H3V3zm0 10h8v8H3v-8zm10-10h8v8h-8V3zm0 10h8v8h-8v-8z"/>
                         </svg>
                         Dashboard
                     </li>
-                    <li>
+                    <li class="sidebar__menu-item">
                         <svg width="16" height="16" viewBox="0 0 24 24">
                             <path d="M2 6v16h20V6H2zm18 14H4V8h16v12z"/>
                         </svg>
                         Folders
                     </li>
-                    <li>
+                    <li class="sidebar__menu-item">
                         <svg width="16" height="16" viewBox="0 0 24 24">
                             <path d="M10 4H4v16h16V10h-6V4z"/>
                         </svg>
                         Projects
                     </li>
-                    <li>
+                    <li class="sidebar__menu-item">
                         <svg width="16" height="16" viewBox="0 0 24 24">
                             <path d="M5 3h14v18H5V3zm12 16V5H7v14h10z"/>
                         </svg>
                         Tasks
                     </li>
-                    <li>
+                    <li class="sidebar__menu-item">
                         <svg width="16" height="16" viewBox="0 0 24 24">
                             <path d="M12 1l2.5 7H22l-6 4.5 2.5 7-6-4.5-6 4.5 2.5-7L2 8h7.5z"/>
                         </svg>
@@ -45,27 +45,70 @@
                     </li>
                 </ul>
             </div>
-            <div class="profile">
-                <div class="profile-info">
+            <div class="sidebar__profile">
+                <div class="sidebar__profile-info">
                     <img src="https://cataas.com/cat" alt="David Lee">
                     <span>Devin Lee</span>
                 </div>
-                <button>›</button>
+                <button class="sidebar__profile-btn">›</button>
             </div>
         </aside>
 
-        <main class="content">
-            <section class="recent-folders">
-                <h3>RECENT FOLDERS</h3>
-                <div class="folder-container">
-                    <div class="folder">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3767/3767084.png" alt="Folder Icon" class="folder-icon">
-                        <span class="folder-name">Invoices</span>
+        <main class="dashboard__content">
+            <section class="folders">
+                <h3 class="folders__title">RECENT FOLDERS</h3>
+                <div class="folders__container">
+                    <div class="folders__item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3767/3767084.png" alt="Folder Icon" class="folders__icon">
+                        <span class="folders__name">Invoices</span>
                     </div>
-                    <div class="folder">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3767/3767084.png" alt="Folder Icon" class="folder-icon">
-                        <span class="folder-name">Customers</span>
-                        <span class="notification-dot"></span>
+                    <div class="folders__item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3767/3767084.png" alt="Folder Icon" class="folders__icon">
+                        <span class="folders__name">Customers</span>
+                        <span class="folders__notification"></span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects">
+                <h3 class="projects__title">PROJECTS</h3>
+                <div class="projects__container">
+                    <div class="projects__card">
+                        <div class="projects__label projects__label--purple">S</div>
+                        <div class="projects__info">
+                            <span class="projects__name">Sintex</span>
+                            <div class="projects__progress-bar">
+                                <div class="projects__progress" style="width: 55%;"></div>
+                            </div>
+                            <span class="projects__progress-text">26/47</span>
+                        </div>
+                    </div>
+            
+                    <div class="projects__card">
+                        <div class="projects__label projects__label--red">T</div>
+                        <div class="projects__info">
+                            <span class="projects__name">Tetrion</span>
+                            <div class="projects__progress-bar">
+                                <div class="projects__progress" style="width: 35%;"></div>
+                            </div>
+                            <span class="projects__progress-text">7/21</span>
+                        </div>
+                    </div>
+            
+                    <div class="projects__card">
+                        <div class="projects__label projects__label--green">P</div>
+                        <div class="projects__info">
+                            <span class="projects__name">Petron</span>
+                            <div class="projects__progress-bar">
+                                <div class="projects__progress" style="width: 87%;"></div>
+                            </div>
+                            <span class="projects__progress-text">14/16</span>
+                        </div>
+                    </div>
+            
+                    <div class="projects__card projects__card--add">
+                        <span class="projects__add-icon">+</span>
+                        <span class="projects__add-text">Add new</span>
                     </div>
                 </div>
             </section>
