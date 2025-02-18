@@ -5,6 +5,29 @@ body {
     display: flex;
     height: 100vh;
 }
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .time-date {
+    display: flex;
+    flex-direction: column;
+}
+
+header .time {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .date {
+    font-size: 16px;
+    color: #ccc;
+}
 
 .dashboard {
     display: flex;
