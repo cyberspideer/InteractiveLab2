@@ -6,17 +6,50 @@ body {
     height: 100vh;
 }
 header {
-    background-color: #333;
-    color: #fff;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    
+}
+.search-container {
+    position: relative;
+    width: 250px;
+    bottom: 70px;
+    right: 30px;
+}
+    .fa-solid{
+position: relative;
+left: 260px;
+bottom: 28px;
+color: black;
+    }
+.search-input {
+    width: 100%;
+    padding: 10px 35px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #888;
 }
 
 header .time-date {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    right: 70px;
+    top: 4%;
+
 }
 
 header .time {
@@ -26,7 +59,7 @@ header .time {
 
 header .date {
     font-size: 16px;
-    color: #ccc;
+    color: black;
 }
 
 .dashboard {
@@ -137,6 +170,7 @@ header .date {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+
 }
 
 .folders {
