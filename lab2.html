@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 2 Tester</title>
     <link rel="stylesheet" href="lab2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
+<div>
+  
     <div class="dashboard">
+        
         <aside class="sidebar">
             <div class="sidebar__content">
                 <h2 class="sidebar__logo">S</h2>
@@ -55,6 +58,19 @@
         </aside>
 
         <main class="dashboard__content">
+            <header>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <!-- above header -->
+                <div class="time-date">
+                    <span class="time">17:30</span>
+                    <span class="date">18 August</span>
+                </div>
+            </header>
+        
+            <!-- header -->
             <section class="folders">
                 <h3 class="folders__title">RECENT FOLDERS</h3>
                 <div class="folders__container">
@@ -114,6 +130,6 @@
             </section>
         </main>
     </div>
-
+</div>
 </body>
 </html>
